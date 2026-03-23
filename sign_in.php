@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion Moderne</title>
+    <title>Inscription</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -75,7 +75,7 @@
         button {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            background: black;
             border: none;
             border-radius: 10px;
             color: white;
@@ -149,7 +149,7 @@
         </div>
 
         <button type="submit">Creer le compte</button><br>
-        <a href="login.php">Déjà un compte ? Connectez-vous ici.</a>
+        <p class="footer-text">Vous avez déjà un compte ? <a href="login.php" style="color: #38bdf8; text-decoration:none;">Connectez-vous</a></p>
     </form>
 </div>
 

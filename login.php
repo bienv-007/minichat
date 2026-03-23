@@ -123,6 +123,7 @@
 
             <button type="submit">Se connecter</button>
         </form>
+        <p class="footer-text">Pas encore de compte ? <a href="sign_in.php" style="color: #38bdf8; text-decoration:none;">Inscrivez-vous</a></p>
     </div>
 
 </body>
