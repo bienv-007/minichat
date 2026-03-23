@@ -148,7 +148,8 @@
             <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" required>
         </div>
 
-        <button type="submit">Se connecter</button>
+        <button type="submit">Creer le compte</button><br>
+        <a href="login.php">Déjà un compte ? Connectez-vous ici.</a>
     </form>
 </div>
 

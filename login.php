@@ -61,7 +61,7 @@
             /* background: var(--input-bg); */
             border: 1px solid #475569;
             border-radius: 0.75rem;
-            color: white;
+            /* color: white; */
             font-size: 1rem;
             transition: all 0.2s ease;
             box-sizing: border-box; /* Important pour que le padding ne dépasse pas */
@@ -89,7 +89,7 @@
         }
 
         button:hover {
-            background-color: #7dd3fc;
+            /* background-color: #7dd3fc; */
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
         }
