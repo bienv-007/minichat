@@ -133,9 +133,12 @@ $user = $req->fetch(PDO::FETCH_ASSOC);
         .btn-update { background: var(--primary); color: white; margin-top: 10px; }
         .btn-update:hover { background: var(--primary-hover); transform: translateY(-1px); }
 
-        .btn-delete { background: white; color: var(--danger); border: 1px solid var(--danger); margin-top: 15px; }
+        .btn-delete, .btn-deconnexion { background: white; color: var(--danger); border: 1px solid var(--danger); margin-top: 15px; }
         .btn-delete:hover { background: #fef2f2; }
 
+        .btn-deconnexion{
+            width: 94.5%;
+        }
         /* Zone de danger */
         .danger-zone { 
             margin-top: 35px; 
@@ -190,7 +193,7 @@ $user = $req->fetch(PDO::FETCH_ASSOC);
                 <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">
                     Une fois votre compte supprimé, il n'y a pas de retour en arrière. Soyez certain de votre choix.
                 </p>
-                <form method="POST" onsubmit="return confirm('❗ Attention : Cette action est irréversible. Voulez-vous vraiment supprimer votre compte ?');">
+                <form method="POST" onsubmit="return confirm('Attention : Cette action est irréversible. Voulez-vous vraiment supprimer votre compte ?');">
                     <button type="submit" name="delete_account" class="btn btn-delete">Supprimer mon compte</button>
                 </form>
             </div>
@@ -198,6 +201,7 @@ $user = $req->fetch(PDO::FETCH_ASSOC);
             <div class="alert error">Utilisateur introuvable.</div>
         <?php endif; ?>
 
+        <a href="deconnexion.php" class="btn btn-deconnexion">Deconnexion</a>
         <a href="index.php" class="back-link">← Retour à l'accueil</a>
     </div>
 </div>
