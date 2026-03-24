@@ -82,7 +82,7 @@ $msgs = $connexion->query("SELECT m.*, u.nom_user FROM messages m JOIN t_utilisa
         <div class="message-card">
             <span class="author"><?php echo htmlspecialchars($m['nom_user']); ?></span>
             <div class="date">le <?php echo date('d/m à H:i', strtotime($m['date_creation'])); ?></div>
-            <div class="content"><?php echo nl2br(htmlspecialchars($m['contenu'])); ?></div>
+            <div class="content"><?php echo html_entity_decode(nl2br(htmlspecialchars($m['contenu'])), ENT_QUOTES); ?></div>
 
             <div class="comments-section">
                 <?php
@@ -93,7 +93,7 @@ $msgs = $connexion->query("SELECT m.*, u.nom_user FROM messages m JOIN t_utilisa
                 ?>
                     <div class="comment">
                         <strong><?php echo htmlspecialchars($c['nom_user']); ?> :</strong> 
-                        <?php echo htmlspecialchars($c['contenu']); ?>
+                        <?php echo html_entity_decode(htmlspecialchars($c['contenu'], ENT_QUOTES)); ?>
                     </div>
                 <?php endwhile; ?>
 
