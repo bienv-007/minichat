@@ -61,6 +61,10 @@ $msgs = $connexion->query("SELECT m.*, u.nom_user FROM messages m JOIN t_utilisa
         .comment { background: #f0f2f5; padding: 10px; border-radius: 12px; margin-bottom: 8px; font-size: 0.9rem; }
         .comment-form { display: flex; gap: 10px; margin-top: 10px; }
         .comment-input { padding: 8px; border-radius: 20px; flex-grow: 1; border: 1px solid #ddd; }
+        .compte{
+            color: #000;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -68,7 +72,7 @@ $msgs = $connexion->query("SELECT m.*, u.nom_user FROM messages m JOIN t_utilisa
 <div class="container">
     <div class="header">
         <h2>Minichat</h2>
-        <span>👤 <?php echo htmlspecialchars($user_nom); ?> | <a href="deconnexion.php" style="color:red; text-decoration:none;">Quitter</a></span>
+        <span> <a href="compte.php" class="compte">👤 <?php echo htmlspecialchars($user_nom); ?></a></span>
     </div>
 
     <div class="post-card">
